@@ -84,7 +84,8 @@ class SlackAlerter(Alerter):
                     'color': self.slack_msg_color,
                     'title': self.create_title(matches),
                     'text': body,
-                    'fields': []
+                    'fields': [],
+                    'mrkdwn_in': ['text'],
                 }
             ]
         }
