@@ -17,8 +17,8 @@ from elastalert.alerts import JiraAlerter
 from elastalert.alerts import JiraFormattedMatchString
 from elastalert.alerts import MsTeamsAlerter
 from elastalert.alerts import PagerDutyAlerter
-from elastalert.alerts import SlackAlerter
 from elastalert.alerts import StrideAlerter
+from elastalert.slack_alert import SlackAlerter
 from elastalert.config import load_modules
 from elastalert.opsgenie import OpsGenieAlerter
 from elastalert.util import ts_add

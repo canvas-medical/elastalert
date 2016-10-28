@@ -7,6 +7,7 @@ import os
 import sys
 
 import alerts
+import slack_alert
 import enhancements
 import jsonschema
 import ruletypes
@@ -68,7 +69,7 @@ alerts_mapping = {
     'hipchat': alerts.HipChatAlerter,
     'stride': alerts.StrideAlerter,
     'ms_teams': alerts.MsTeamsAlerter,
-    'slack': alerts.SlackAlerter,
+    'slack': slack_alert.SlackAlerter,
     'pagerduty': alerts.PagerDutyAlerter,
     'exotel': alerts.ExotelAlerter,
     'twilio': alerts.TwilioAlerter,
